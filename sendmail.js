@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Czyszczenie formularza podczas ładowania strony
+  document.getElementById("discordForm").reset();
+});
+
 document
   .getElementById("discordForm")
   .addEventListener("submit", function (event) {

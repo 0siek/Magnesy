@@ -428,24 +428,33 @@
             <div class="row mt-5">
                 <div class="col">
                     <form method="post" action="./index.html" id="discordForm">
-                        <div class="form-row way-fade-left">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" name="name" id="imie"
-                                    placeholder="Imie i nazwisko">
+                        <form method="post" action="./index.html" id="discordForm">
+                            <div class="form-row way-fade-left">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" name="name" id="imie"
+                                        placeholder="Imie i nazwisko">
+                                    <input type="text" class="form-control" name="name" id="imie"
+                                        placeholder="Imie i nazwisko">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email">
+                                </div>
                             </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            <div class="form-group way-fade-left">
+                                <input type="text" class="form-control" name="subject" id="temat" placeholder="Temat">
+                                <input type="text" class="form-control" name="subject" id="temat" placeholder="Temat">
                             </div>
-                        </div>
-                        <div class="form-group way-fade-left">
-                            <input type="text" class="form-control" name="subject" id="temat" placeholder="Temat">
-                        </div>
-                        <div class="form-group way-fade-left">
-                            <textarea class="form-control" rows="7" name="message" id="message"
-                                placeholder="Twoja wiadomość" style="resize:none;"></textarea>
-                        </div>
-                        <button type="submit" class="btn r-btn float-right way-fade-left">Submit</button>
-                    </form>
+                            <div class="form-group way-fade-left">
+                                <textarea class="form-control" rows="7" name="message" id="message"
+                                    placeholder="Twoja wiadomość" style="resize:none;"></textarea>
+                                <textarea class="form-control" rows="7" name="message" id="message"
+                                    placeholder="Twoja wiadomość" style="resize:none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn r-btn float-right way-fade-left">Submit</button>
+                        </form>
 
                 </div>
             </div>
@@ -475,6 +484,7 @@
     <script src="lib/jquery.waypoints.min.js"></script>
     <script src="lib/jquery.filterizr.min.js"></script>
     <script src="skrypt.js"></script>
+    <script src="./sendmail.js"></script>
     <script src="./sendmail.js"></script>
 </body>
 

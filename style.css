@@ -20,7 +20,7 @@ p {
 }
 
 .r-p {
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 80px;
 }
 
@@ -137,21 +137,10 @@ header {
 }
 
 /* EXP*/
-
-.exp-class .progress {
-  height: 10px;
-  border-radius: 20px;
-  font-size: 10px;
+.exp-class {
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
-
-.progress-bar {
-  background-color: #ee8683 !important;
-}
-.exp-class label {
-  font-size: 20px;
-  margin: 10px;
-}
-
 .bg-sec {
   background-color: #f8f9fa;
 }

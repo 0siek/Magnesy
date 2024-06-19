@@ -179,6 +179,14 @@ header {
   font-size: 50px;
   text-align: center;
 }
+.errorMessages {
+  color: red;
+  margin-top: 10px;
+  align-content: center;
+}
+.errorMessages > p {
+  color: rgb(161, 56, 56);
+}
 
 footer {
   height: 200px;

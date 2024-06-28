@@ -120,6 +120,37 @@ header {
 }
 
 /*About*/
+.about-img {
+  position: absolute;
+  left: -300px; /* Przesunięcie zdjęcia na początku poza lewą stronę */
+  opacity: 0; /* Początkowo ustaw przejrzystość na 0 */
+  transition: left 2s ease, opacity 2s ease; /* Dłuższe przejście animacji */
+}
+
+.about-img-show {
+  left: 0; /* Przesunięcie zdjęcia do lewej strony */
+  opacity: 1; /* Przejście do pełnej widoczności */
+}
+
+.about {
+  position: relative;
+}
+
+.about-content {
+  position: absolute;
+  right: -300px; /* Przesunięcie sekcji na początku poza prawą stronę */
+  opacity: 0; /* Początkowo ustaw przejrzystość na 0 */
+  transition: right 2s ease, opacity 2s ease; /* Dłuższe przejście animacji */
+}
+
+.about-show {
+  right: 0; /* Przesunięcie sekcji do prawej strony */
+  opacity: 1; /* Przejście do pełnej widoczności */
+}
+
+.about {
+  background-color: #f9f9f9;
+}
 .about li a {
   color: #000;
   display: inline-block;
@@ -137,9 +168,38 @@ header {
 }
 
 /* EXP*/
+.exp-id {
+  position: relative;
+}
+
+.exp-id-content {
+  position: absolute;
+  left: -300px; /* Przesunięcie sekcji na początku poza prawą stronę */
+  opacity: 0; /* Początkowo ustaw przejrzystość na 0 */
+  transition: left 2s ease, opacity 2s ease; /* Dłuższe przejście animacji */
+}
+
+.exp-id-show {
+  left: 0; /* Przesunięcie sekcji do prawej strony */
+  opacity: 1; /* Przejście do pełnej widoczności */
+}
+
+.exp-id-img {
+  position: absolute;
+  right: -300px; /* Przesunięcie zdjęcia na początku poza prawą stronę */
+  opacity: 0; /* Początkowo ustaw przejrzystość na 0 */
+  transition: right 2s ease, opacity 2s ease; /* Dłuższe przejście animacji */
+}
+
+.exp-id-img-show {
+  right: 0; /* Przesunięcie zdjęcia do prawej strony */
+  opacity: 1; /* Przejście do pełnej widoczności */
+}
+
 .exp-class {
   padding-top: 120px;
   padding-bottom: 80px;
+  background-color: #f9f9f9;
 }
 .bg-sec {
   background-color: #f8f9fa;
@@ -149,7 +209,10 @@ header {
 
 .card,
 .card-header {
-  background-color: #f8f9fa !important;
+  background-color: #fff !important;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-header {
@@ -168,13 +231,16 @@ header {
 }
 
 /*Work*/
-
+.work {
+  background-color: #f9f9f9;
+}
 .work .card-wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 /*Contact*/
+
 .contact .r-icon {
   font-size: 50px;
   text-align: center;
@@ -203,6 +269,66 @@ footer .r-icon a:hover {
   border: 1px solid #eee;
   color: #eee;
   transition: 0.5s all;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.r-icon:hover {
+  transform: scale(1.1);
+}
+
+.btn-secondary:hover {
+  transform: scale(1.1);
+}
+
+.testimonials {
+  padding: 120px 0;
+  background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.testimonial .customer {
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-collapse {
+  transition: height 1s ease;
 }
 
 @media (min-width: 200px) and (max-width: 768px) {

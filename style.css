@@ -365,3 +365,36 @@ img:hover {
     background-position: -700px 0;
   }
 }
+@media (max-width: 992px) {
+  .about .row {
+    display: flex;
+    flex-direction: column-reverse; /* Odwróć kolejność elementów w wersji mobilnej */
+  }
+  .about {
+    padding-bottom: 300px;
+  }
+
+  .about .col-lg-6 {
+    margin-bottom: 20px; /* Odstęp między kolumnami */
+  }
+
+  .about .col-lg-6 img {
+    width: 100%; /* Ustaw szerokość obrazu na pełną szerokość kolumny */
+    margin-bottom: 100px; /* Dodatkowy odstęp między obrazem a tekstem */
+  }
+  .exp-class {
+    padding-bottom: 300px;
+  }
+  .exp-id .row {
+    display: flex;
+  }
+
+  .exp-id .col-lg-6 {
+    margin-bottom: 20px; /* Odstęp między kolumnami */
+  }
+
+  .exp-id .col-lg-6 img {
+    width: 100%; /* Ustaw szerokość obrazu na pełną szerokość kolumny */
+    margin-bottom: 10px; /* Dodatkowy odstęp między obrazem a tekstem */
+  }
+}

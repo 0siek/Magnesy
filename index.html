@@ -12,15 +12,16 @@
     <script src="https://kit.fontawesome.com/77fa8c3cb0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700" rel="stylesheet">
     <link rel="stylesheet" href="lib/animate.css">
-    <title>MagnesyTurystyczne</title>
-    <link rel="shortcut icon" href="/Magnesy//zdj/logo.jpg" type="image/x-icon">
+    <title>Magnesy Turystyczne</title>
+    <link rel="shortcut icon" href="/Magnesy//zdj/grafiki/logo.jpg" type="image/x-icon">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
         <div class="container">
             <a href="" class="navbar-brand" id="navbar-brand">Magnesy</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarId">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarId"
+                aria-label="Toggle navigation">
                 <span><i class="fa fa-bars hamburger"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarId">
@@ -66,7 +67,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="./zdj/1.png" class="img-fluid img-thumbnail about-img" alt="profile picture">
+                    <img src="./zdj/1.png" class="img-fluid img-thumbnail about-img" alt="profile picture"
+                        style="max-height: 90%; max-width: 90%; object-fit: contain; ">
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 about-content">
 
@@ -95,22 +97,18 @@
             <div class="row">
                 <div class="col-lg-6 mt-5 mt-lg-0 exp-id-content">
 
-                    <h2>Nasze magnesy</h2>
-                    <p>Zapraszamy do naszego sklepu, gdzie znajdziesz unikalne magnesy wykonane z wysokiej jakości
-                        sklejki. Nasze magnesy są nie tylko praktyczne, ale także estetycznie wykonane, co czyni je
-                        idealnym dodatkiem do każdego domu lub biura
-                        Każdy nasz magnes jest starannie wydrukowany za pomocą technologii nadruku UV, co gwarantuje
-                        żywe i trwałe kolory. Nadruk UV to nowoczesna technologia, która pozwala na uzyskanie
-                        precyzyjnych i wyraźnych obrazów, które nie blakną z upływem czasu
-                        Nasze magnesy są lekkie, ale mocne, dzięki czemu idealnie nadają się do przechowywania notatek,
-                        zdjęć czy rysunków na lodówce czy tablicy magnetycznej. Są również doskonałym pomysłem na
-                        prezent dla bliskich.
-                        Zapraszamy do przeglądania naszej oferty i odkrywania piękna prostoty i funkcjonalności naszych
-                        magnesów z nadrukiem UV.
-                    </p>
+                    <h2>O nas</h2>
+                    <p>Jesteśmy pasjonatami podróży i rękodzieła, którzy postanowili połączyć te dwie pasje, tworząc
+                        unikalne magnesy turystyczne. Nasza firma powstała z potrzeby uchwycenia wspomnień z
+                        najpiękniejszych zakątków Polski w formie estetycznych i trwałych pamiątek. Wykorzystujemy
+                        sklejkę najwyższej jakości oraz technologię druku UV, aby każdy magnes był wyjątkowy i
+                        wytrzymały. Działamy lokalnie w Olkuszu, ale nasze produkty cieszą się popularnością w całej
+                        Polsce. Zaufaj naszej jakości i pasji – sprawdź, co dla Ciebie przygotowaliśmy!</p>
+
                 </div>
                 <div class="col-lg-6">
-                    <img src="./zdj/1.png" class="img-fluid img-thumbnail exp-id-img" alt="profile picture">
+                    <img src="./zdj/1.png" class="img-fluid img-thumbnail exp-id-img" alt="profile picture"
+                        style="max-height: 110%; max-width: 110%; object-fit: contain; ">
                 </div>
             </div>
         </div>
@@ -131,80 +129,511 @@
             </div>
             <div class="row-xs-12 mx-auto mb-5">
                 <button class="btn r-btn" data-filter="all">Wszystkie</button>
-                <button class="btn r-btn" data-filter="1">Zakopane</button>
-                <button class="btn r-btn" data-filter="2">Ogrodzeniec</button>
-                <button class="btn r-btn" data-filter="3">Bieszczady</button>
+                <button class="btn r-btn" data-filter="1">Częstochowa</button>
+                <button class="btn r-btn" data-filter="2">Kraków</button>
+                <button class="btn r-btn" data-filter="3">Ogrodzeniec</button>
+                <button class="btn r-btn" data-filter="4">Bieszczady</button>
+                <button class="btn r-btn" data-filter="5">Rabsztyn</button>
             </div>
         </div>
         <div class="container ">
             <div class="row filter-container mx-auto">
+
                 <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="1">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./zdj/produkt_1.png" class="card-img-top" alt="magnes">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/czestochowa/Czestochowa_1.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Kup</a>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="1">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/czestochowa/Czestochowa_2.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="1">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/czestochowa/Czestochowa_3.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="1">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/czestochowa/Czestochowa_4.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="1">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/czestochowa/Czestochowa_5.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="1">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/czestochowa/Czestochowa_6.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="1">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./zdj/produkt_2.png" class="card-img-top" alt="magnes">
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_1.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Kup</a>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./zdj/produkt_3.png" class="card-img-top" alt="magnes">
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_2.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Kup</a>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="2">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./zdj/produkt_4.png" class="card-img-top" alt="magnes">
+
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_3.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Kup</a>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="1">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./zdj/produkt_5.png" class="card-img-top" alt="magnes">
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_4.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Kup</a>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper " data-category="1">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./zdj/produkt_5.png" class="card-img-top" alt="magnes">
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_5.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Kup</a>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
                         </div>
                     </div>
                 </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_6.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_7.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="2">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/krakow/krakow_8.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr1.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr1_data.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr2.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr2_data.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr3.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr3_data.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr4.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr4_data.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr5.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr5_data.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr6.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="3">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/ogrodzieniec/Wzór_nr6_data.png" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="5">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/rabsztyn/rabsztyn_1.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="5">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/rabsztyn/rabsztyn_2.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper col-xs-6 col-sm-4 col-md-4 filtr-item  " data-category="5">
+                    <div class="card h-100">
+                        <div class="img-container"
+                            style="height: 200px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa;">
+                            <img src="./zdj/rabsztyn/rabsztyn_3.jpg" class="img-fluid" alt="magnes"
+                                style="max-height: 90%; max-width: 90%; object-fit: contain;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="https://www.reklamaigadzety.pl/index.html" class="btn btn-primary">Dowiedz się
+                                więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
 
@@ -221,21 +650,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="zdj/Firefly młoda kobieta 35741.jpg" alt="Anna K." class="testimonial-img">
+                        <img src="zdj/grafiki/osoba_1.jpg" alt="Anna K." class="testimonial-img">
                         <p>"Magnesy są świetne! Doskonała jakość i piękne wzory."</p>
                         <p class="customer">- Anna K.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="zdj/Firefly młoda kobieta 40953.jpg" alt="Piotr Z." class="testimonial-img">
+                        <img src="zdj/grafiki/osoba_2.jpg" alt="Piotr Z." class="testimonial-img">
                         <p>"Szybka dostawa i bardzo miła obsługa. Na pewno zamówię ponownie."</p>
                         <p class="customer">- Piotr Z.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial">
-                        <img src="zdj/Firefly młoda kobieta 96375.jpg" alt="Maria W." class="testimonial-img">
+                        <img src="zdj/grafiki/osoba_3.jpg" alt="Maria W." class="testimonial-img">
                         <p>"Idealne na prezent! Moja rodzina była zachwycona."</p>
                         <p class="customer">- Maria W.</p>
                     </div>
@@ -249,7 +678,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-                    <h2>Contact</h2>
+                    <h2>Kontakt</h2>
                 </div>
             </div>
             <div class="row mt-5 icons">
@@ -328,7 +757,8 @@
         <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="row">
                 <div class="col">
-                    <p class="text-muted" style="font-size:14px;">&copy; copyright Patrick K | 2023 All Rights Reserved
+                    <p class="text-muted" style="font-size:14px;">&copy; copyright Patryk Kajda | 2025 All Rights
+                        Reserved
                     </p>
                 </div>
             </div>

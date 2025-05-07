@@ -66,28 +66,95 @@
             <div class="row">
                 <!-- Product Image -->
                 <div class="col-lg-6">
-                    <div class="product-image-container">
-                        <img src="./zdj/krakow/krakow_3.jpg" class="img-fluid img-thumbnail product-main-img"
-                            alt="Magnes Kraków" style="max-height: 400px; max-width: 100%; object-fit: contain;">
+                    <div class="product-image-container position-relative" id="media-display">
+                        <!-- media + strzałki wstawiane przez JS -->
                     </div>
+
                     <div class="product-thumbnails mt-3 d-flex justify-content-center">
-                        <div class="thumbnail-item mx-2">
+                        <div class="thumbnail-item mx-2" onclick="setMedia(0)">
                             <img src="./zdj/krakow/krakow_3.jpg" class="img-fluid thumbnail-img active"
                                 alt="Magnes Kraków widok 1"
                                 style="height: 80px; width: 80px; object-fit: cover; cursor: pointer;">
                         </div>
-                        <div class="thumbnail-item mx-2">
-                            <img src="./zdj/krakow/krakow_2.jpg" class="img-fluid thumbnail-img"
-                                alt="Magnes Kraków widok 2"
-                                style="height: 80px; width: 80px; object-fit: cover; cursor: pointer;">
-                        </div>
-                        <div class="thumbnail-item mx-2">
-                            <img src="./zdj/krakow/krakow_1.jpg" class="img-fluid thumbnail-img"
-                                alt="Magnes Kraków widok 3"
-                                style="height: 80px; width: 80px; object-fit: cover; cursor: pointer;">
+                        <div class="thumbnail-item mx-2" onclick="setMedia(1)">
+                            <div style="height: 80px; width: 80px; position: relative; cursor: pointer;">
+                                <img src="./zdj/krakow/video_thumbnail.jpg" class="img-fluid" alt="Filmik Magnes Kraków"
+                                    style="height: 100%; width: 100%; object-fit: cover;">
+                                <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                             font-size: 24px; color: white;">▶</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+                <style>
+                    .arrow-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        border: none;
+                        font-size: 2rem;
+                        padding: 0 10px;
+                        cursor: pointer;
+                        z-index: 2;
+                    }
+
+                    .left-arrow {
+                        left: 0;
+                    }
+
+                    .right-arrow {
+                        right: 0;
+                    }
+                </style>
+
+                <script>
+                    const mediaItems = [
+                        { type: 'image', src: './zdj/krakow/krakow_3.jpg' },
+                        { type: 'video', src: './magnesy_ok.mp4' }
+                    ];
+                    let currentMediaIndex = 0;
+
+                    function displayMedia(index) {
+                        const item = mediaItems[index];
+                        currentMediaIndex = index;
+
+                        const mediaContent = item.type === 'image'
+                            ? `<img src="${item.src}" class="img-fluid img-thumbnail product-main-img"
+                 style="max-height: 400px; max-width: 100%; object-fit: contain;">`
+                            : `<video autoplay muted controls style="max-height: 400px; max-width: 100%; width: 100%;">
+                <source src="${item.src}" type="video/mp4">
+                Twoja przeglądarka nie obsługuje wideo.
+           </video>`;
+
+                        document.getElementById('media-display').innerHTML = `
+        ${mediaContent}
+        <button onclick="prevMedia()" class="arrow-btn left-arrow">&#10094;</button>
+        <button onclick="nextMedia()" class="arrow-btn right-arrow">&#10095;</button>
+    `;
+                    }
+
+
+                    function nextMedia() {
+                        currentMediaIndex = (currentMediaIndex + 1) % mediaItems.length;
+                        displayMedia(currentMediaIndex);
+                    }
+
+                    function prevMedia() {
+                        currentMediaIndex = (currentMediaIndex - 1 + mediaItems.length) % mediaItems.length;
+                        displayMedia(currentMediaIndex);
+                    }
+
+                    function setMedia(index) {
+                        displayMedia(index);
+                    }
+
+                    // Initial display
+                    displayMedia(currentMediaIndex);
+                </script>
 
                 <!-- Product Info -->
                 <div class="col-lg-6 mt-4 mt-lg-0">
@@ -121,9 +188,10 @@
                             <li><strong>Technika nadruku:</strong> UV</li>
                             <li><strong>Grubość:</strong> 3 mm</li>
                             <li><strong>Magnes:</strong> Neodymowy</li>
+                            <li><strong>Numer produktu:</strong> KR 03</li>
                         </ul>
                     </div>
-
+                    <!-- 
                     <div class="product-actions">
                         <div class="quantity-selector d-flex align-items-center mb-3">
                             <label for="quantity" class="mr-3">Ilość:</label>
@@ -147,7 +215,7 @@
                         <button class="btn btn-outline-secondary btn-lg mb-2">
                             <i class="fas fa-heart mr-2"></i> Dodaj do ulubionych
                         </button>
-                    </div>
+                    </div> -->
 
                     <div class="product-share mt-4">
                         <h4>Udostępnij</h4>
@@ -646,6 +714,7 @@
                 }
             });
         });
+
     </script>
 </body>
 
